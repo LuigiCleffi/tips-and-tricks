@@ -7,6 +7,4 @@ const bankClients = [
   Person("Cloverson", 39, "Manobrista")
 ]
 
-bankClients.forEach(client => {
-  console.log(client)
-})
+console.log({...bankClients})

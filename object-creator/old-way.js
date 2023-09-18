@@ -11,6 +11,4 @@ const pessoas = [
   }
 ]
 
-pessoas.forEach(client => {
-  console.log(client)
-})
+console.log({...pessoas})
