@@ -8,7 +8,7 @@ A comprehensive guide to web development, covering various technologies and best
 
 ## Taskade Web Development Checklist
 This resource offers a detailed checklist to guide you through different aspects of web development.
-- **Website**: [Taskade Checklist](https://www.taskade.com/d/1LaDtCuGZRePNsyY?share=view&view=hdVMpz8ZcL7tSaP5)
+- **Website**: [JavaScript Roadmap](https://www.taskade.com/d/1LaDtCuGZRePNsyY?share=view&view=hdVMpz8ZcL7tSaP5)
 
 ## GitHub
 GitHub is an essential tool for web developers, offering code hosting, version control, and collaboration features.
