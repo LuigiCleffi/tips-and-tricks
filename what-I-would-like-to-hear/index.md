@@ -14,6 +14,9 @@ This resource offers a detailed checklist to guide you through different aspects
 GitHub is an essential tool for web developers, offering code hosting, version control, and collaboration features.
 - **Website**: [GitHub](https://github.com/)
 
+## Roadmap.sh
+- **Website**: [Roadmap](https://roadmap.sh/javascript)
+
 ---
 
 Feel free to visit these websites for more detailed information and to enhance your web development skills as demonstrated in the video.
