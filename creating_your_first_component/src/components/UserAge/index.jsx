@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function UserAge(props) {
   return (
-    <div>Your age is: {props.age}</div>
+    <h1>Your age is: {props.age}</h1>
   )
 }
 
