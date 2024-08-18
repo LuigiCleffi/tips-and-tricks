@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    // Specifies the ECMAScript target version for transpilation. ESNext is the latest version of ECMAScript.
+    "target": "ESNext",
+    // Uses `define` behavior for class fields, aligning with the latest ECMAScript specification.
+    "useDefineForClassFields": true,
+    // Specifies the library files to include in the compilation. "DOM" for browser APIs, "DOM.Iterable" for iterating over DOM collections, and "ESNext" for modern JavaScript features.
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    // Disallows JavaScript files from being included in the project. Only TypeScript files will be processed.
+    "allowJs": false,
+    // Skips type checking of all declaration files (*.d.ts).
+    "skipLibCheck": true,
+    // Disables compatibility with CommonJS `require()` for ES modules. This ensures strict ES module interoperability.
+    "esModuleInterop": false,
+    // Allows default imports from modules with no default export defined. Useful when working with certain libraries.
+    "allowSyntheticDefaultImports": true,
+    // Enables strict type checking options, making TypeScript more robust and safer.
+    "strict": true,
+    // Ensures that file names are consistent in casing across the project. Helps prevent issues in case-insensitive file systems.
+    "forceConsistentCasingInFileNames": true,
+    // Specifies the module system to use for imports/exports. ESNext is the latest version.
+    "module": "ESNext",
+    // Determines how module resolution works. "Node" mimics Node.js behavior, allowing for Node-style module resolution.
+    "moduleResolution": "Node",
+    // Allows importing JSON files as modules.
+    "resolveJsonModule": true,
+    // Ensures each file is treated as an isolated module, often used with tools like Babel or when working with ECMAScript modules.
+    "isolatedModules": true,
+    // Disables emitting compiled files; typically used in projects where a separate build tool handles compilation (e.g., Babel or a bundler like Webpack).
+    "noEmit": true,
+    // Sets the JSX factory to `React.createElement`, compatible with React 17+.
+    "jsx": "react-jsx"
+  },
+  "include": [
+    // Includes all files in the "src" directory in the TypeScript compilation.
+    "src"
+  ],
+  "references": [
+    // References another TypeScript configuration file for project-specific settings (in this case, likely for Node.js-related configuration).
+    {
+      "path": "./tsconfig.vite.json"
+    }
+  ]
+}
