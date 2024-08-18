@@ -1,3 +1,4 @@
+import Counter from "./components/DeclarativeRendering"
 import HelloWorld from "./components/HelloWorld"
 import UserAge from "./components/UserAge"
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <HelloWorld />
       <UserAge age={32}/>
+      <Counter />
     </>
 )
 }
