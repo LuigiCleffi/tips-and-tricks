@@ -11,3 +11,4 @@ Currently, two official plugins are available:
 # Configuring typescript into an existing project   
  
 > npm install --save-dev typescript
+> 
