@@ -5,9 +5,7 @@
     "moduleResolution": "node"
   },
   "include": [
-    // Includes the specified TypeScript file (vite.config.ts) in the TypeScript compilation. This is commonly used when configuring build tools like Vite.
     "vite.config.ts",
-    // Add the source files to include in the TypeScript compilation.
     "src/**/*.ts"
   ]
 }
