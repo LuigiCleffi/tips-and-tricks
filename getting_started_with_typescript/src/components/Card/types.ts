@@ -9,4 +9,10 @@ interface CardProps {
   subject: Subject;
 }
 
-export type { CardProps, Subject };
+interface CardDialogProps {
+  isOpen: boolean;
+  onClose: () => void;
+  subject: Subject;
+}
+
+export type { CardProps, Subject, CardDialogProps };

@@ -1,7 +1,36 @@
 import { useCallback, useState } from "react";
-import { CardProps } from "./types";
+import { CardDialogProps, CardProps } from "./types";
 import Dialog from "../Dialog";
 
+// Component to display card details
+interface CardDetailProps {
+  label: string;
+  value: string;
+}
+
+const CardDetail = ({ label, value }: CardDetailProps) => (
+  <span className="flex items-center text-gray-700 mb-2">
+    <p className="text-base font-bold mr-2">{label}:</p>
+    <p className="text-base overflow-hidden overflow-ellipsis whitespace-nowrap max-w-xs">{value}</p>
+  </span>
+);
+
+// Component to display the content of the Dialog
+const CardDialog = ({ isOpen, onClose, subject }: CardDialogProps) => (
+  <Dialog
+    isOpen={isOpen}
+    onClose={onClose}
+    title={subject.name}
+    size="small"
+  >
+    <span className="text-gray-700">
+      <p>Desejo me matricular no seguinte curso: </p>
+      <p className="font-bold">{subject.name}</p>
+    </span>
+  </Dialog>
+);
+
+// Card Component
 function Card({ subject }: CardProps) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
@@ -15,36 +44,12 @@ function Card({ subject }: CardProps) {
         onClick={openDialog}
       >
         <div className="font-bold text-xl mb-4">{subject.name}</div>
-
-        <span className="flex items-center text-gray-700 mb-2">
-          <p className="text-base font-bold mr-2">Código:</p>
-          {subject.code}
-        </span>
-
-        <span className="flex items-center text-gray-700 mb-2">
-          <p className="text-base font-bold mr-2">Professor:</p>
-          {subject.professor}
-        </span>
-
-        <span className="flex items-center text-gray-700">
-          <p className="text-base font-bold mr-2">Horário:</p>
-          {subject.schedule}
-        </span>
+        <CardDetail label="Code" value={subject.code} />
+        <CardDetail label="Professor" value={subject.professor} />
+        <CardDetail label="Schedule" value={subject.schedule} />
       </div>
 
-      {isDialogOpen ? (
-        <Dialog
-          isOpen={isDialogOpen}
-          onClose={closeDialog}
-          title={subject.name}
-          size="small"
-        >
-          <span className="text-gray-700">
-            <p>Quero me matricular na disciplina: </p>
-            <p className="font-bold">{subject.name}</p>
-          </span>
-        </Dialog>
-      ) : null}
+      {isDialogOpen ? <CardDialog isOpen={isDialogOpen} onClose={closeDialog} subject={subject} /> : null}
     </>
   );
 }
