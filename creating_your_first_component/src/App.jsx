@@ -1,3 +1,4 @@
+import { Card } from "./components/Card"
 import ChildrenComponent from "./components/ChildrenComponent"
 import Counter from "./components/DeclarativeRendering"
 import HelloWorld from "./components/HelloWorld"
@@ -22,6 +23,14 @@ function App() {
         <p>This is a child component!</p>
       </ChildrenComponent>
       <Button {...buttonProps} />
+      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      {/* Passamos os valores para as propriedades `title`, `content`, e `footer` */}
+      <Card 
+        title="Título do Card"
+        content="Este é o conteúdo do card. Ele pode conter texto, imagens, ou outros componentes."
+        footer="Rodapé do card."
+      />
+    </div>
     </>
 )
 }
