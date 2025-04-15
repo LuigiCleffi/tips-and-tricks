@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loader"></div>
+
+  <!-- Navigation dots -->
+  <div class="nav-dots">
+    <div class="nav-dot active" data-section="hero"></div>
+    <div class="nav-dot" data-section="products"></div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="mouse"></div>
+    <span>Scroll Down</span>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="parallax-container">
+    <div class="parallax-layer layer-1"></div>
+    <div class="parallax-layer layer-2"></div>
+    <div class="parallax-layer layer-3"></div>
+    <div class="lightning"></div>
+
+    <div class="content">
+      <h1>Voltage</h1>
+      <p>Unleash Your Inner Power</p>
+      <button>Experience The Rush</button>
+    </div>
+  </div>
+
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <div class="product-container">
+      <div class="product-item can-left">
+        <img
+          src="https://images.unsplash.com/photo-1622543925917-763c34d1a86e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800"
+          alt="Voltage Energy Left">
+      </div>
+      <div class="product-item can-center">
+        <img
+          src="https://images.unsplash.com/photo-1622543925917-763c34d1a86e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800"
+          alt="Voltage Energy Center">
+      </div>
+      <div class="product-item can-right">
+        <img
+          src="https://images.unsplash.com/photo-1622543925917-763c34d1a86e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800"
+          alt="Voltage Energy Right">
+      </div>
+      <div class="product-info">
+        <h2>Pure Energy Unleashed</h2>
+        <p>Experience the perfect blend of power and taste</p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js" />
+</body>
+
+</html>
